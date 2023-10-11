@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,900;1,400;1,500&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sarala', sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 90vh ;
+    font-size: 62.5%;
+    background-color: #1f1e1f;
+}
+/*menu*/
+
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    padding-left: 30rem;
+
+}
+.logo{
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display:flex ;
+    align-items: center;
+}
+.logo h3{
+    color: aliceblue;
+    font-size: 1.6rem;
+
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    
+
+}
+.content input{
+    background-color: rgba(0, 255, 255, 0.548);
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    color: aliceblue;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 3rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+
+.content .lista-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .lista-menu li a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: aliceblue;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transform: all 200ms ease-in;
+}
+.content .lista-menu li a:hover {
+    background-color: rgba(230, 11, 11, 0.486);
+    border-bottom:4px solid rgb(255, 60, 0);
+    color: rgb(255, 0, 0);
+}
+
+/* sections */
+
+
+
+.first-section{
+    height: 100vh;
+    background-image:url(carrofundo.jpg);
+    background-position: center,center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.first-section h1 {
+    color: rgb(255, 8, 0);
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.first-section h2 {
+    color: rgb(187, 174, 174);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem
+}
+.btn button{
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgba(255, 8, 0, 0.747);
+    border-radius: 10px;
+    color: rgb(247, 244, 244);
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 600ms ease-in
+}
+.btn button:hover{
+    border: 1px solid rgb(110, 31, 31);
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+}
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+/*login*/
+
+.login {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(fundo2.avif);
+    background-position: center,center;
+    background-size: cover;
+    
+    }
+    .logiin{
+        background-color: rgba(194, 22, 22, 0.384);
+        border-radius: 10px;
+        width: 400px;
+        padding: 40px;
+    }
+    .logiin h2{
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: rgb(243, 234, 234);
+        text-align: center;
+    }
+    
+    .logiin.box-user{
+        position: relative;
+        
+    }
+    .logiin .box-user input{
+        width: 100%;
+        padding: 10px 0;
+        outline: none;
+        border: 0;
+        background: transparent;
+        border-bottom: rgb(243, 11, 139);
+        color: rgb(19, 19, 20);
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .login .box-user label {
+        top: 0;
+        left: 0;
+        color: aliceblue;
+        font-size: 30px;
+        transition: 2s;
+        
+    }
+    .login .box-user input:focus~label,
+    .login .box-user input:valid~label{
+        top: 20px;
+        left: 0;
+        color: aqua;
+        font-size: 25px;
+    }
+    .forget{
+        font-size: 15px;
+        color: aliceblue;
+        float: right;
+    }
+    .botao-login{
+        position: relative;
+        display: inline-block;
+        padding: 12px, 20px;
+        color: rgb(9, 10, 10);
+        text-decoration: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .botao-login:hover{
+        background-color: rgb(0, 247, 255);
+        border-radius: 5px;
+        width: 100px;
+        text-align: center;
+    }
+    .botao-login span {
+        position: absolute;
+        display: block;
+    }
+    .botao-login span:nth-child(1){
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, rgb(0, 204, 255));
+        animation: botao-login1 1s linear infinite;
+    }
+    @keyframes botao-login1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+    botao-login span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, rgb(0, 204, 255));
+        animation: botao-login2 1s linear infinite;
+        animation-delay : .10s;
+    
+    }
+    @keyframes .botao-login2{
+        0%{
+            top:-100%;
+        }
+        50%,
+        100%{
+            top: 100%;
+        }
+    }
+    }
